@@ -1,1 +1,5 @@
 RESTCONF PRACTICE
+3.3 Configure device using RESTCONF API utilizing Python requests library
+
+Jan 15 2023
+    - having a hard time understanding how I can find the URI to access specific resources and having a hard time parsing from the response. Going to move onto DNA/Meraki/SD-WAN to get a better feel for REST API calls 
