@@ -1,7 +1,7 @@
 
 #Virtual Environment
 venv/
-C:\Users\WILSON\Desktop\ENAUTO_PRACTICE\DNA\__pycache__
-C:\Users\WILSON\Desktop\ENAUTO_PRACTICE\DNA\Scripts
-C:\Users\WILSON\Desktop\ENAUTO_PRACTICE\DNA\pyvenv.cfg
-C:\Users\WILSON\Desktop\ENAUTO_PRACTICE\DNA\Lib\site-packages
+DNA/__pycache__/
+DNA/Scripts/
+DNA/pyvenv.cfg
+DNA/Lib/site-packages/
