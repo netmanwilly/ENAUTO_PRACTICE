@@ -5,3 +5,7 @@ DNA/__pycache__/
 DNA/Scripts/
 DNA/pyvenv.cfg
 DNA/Lib/site-packages/
+MERAKI/__pycache__/
+MERAKI/Scripts/
+MERAKI/pyvenv.cfg
+MERAKI/Lib/site-packages/

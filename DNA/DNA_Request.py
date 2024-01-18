@@ -25,3 +25,13 @@ class DNA_Request:
     def __str__(self) -> str:
         string = f'HOST: {self.host}\nHEADERS: {json.dumps(self.headers, indent=2)}'
         return string
+
+
+    def get(self, URI: str):
+        RESPONSE = requests.get(self.host + URI, headers=self.headers, verify=False)
+        RESPONSE.raise_for_status
+        if RESPONSE.status_code != 200:
+            raise ValueError(RESPONSE.status_code)
+        else:
+            print(f'SERVER RESPONSE [{RESPONSE.status_code}] OK!')
+            return RESPONSE.json()
