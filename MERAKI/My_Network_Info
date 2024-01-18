@@ -1,0 +1,17 @@
+  {
+    "id": "L_646829496481115495",
+    "organizationId": "549236",
+    "name": "DNSMB4-wxxx4gmail.com",
+    "productTypes": [
+      "appliance",
+      "camera",
+      "switch",
+      "wireless"
+    ],
+    "timeZone": "America/Los_Angeles",
+    "tags": [],
+    "enrollmentString": null,
+    "url": "https://n149.meraki.com/DNSMB4-wxxx4gmai/n/U995Sdvc/manage/usage/list",
+    "notes": null,
+    "isBoundToConfigTemplate": false
+  }
