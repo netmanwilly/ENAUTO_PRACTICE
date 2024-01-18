@@ -9,3 +9,7 @@ MERAKI/__pycache__/
 MERAKI/Scripts/
 MERAKI/pyvenv.cfg
 MERAKI/Lib/site-packages/
+ANSIBLE/__pycache__/
+ANSIBLE/Scripts/
+ANSIBLE/pyvenv.cfg
+ANSIBLE/Lib/site-packages/
