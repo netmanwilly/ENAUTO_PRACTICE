@@ -39,7 +39,7 @@ def main():
             print("-" * len(text))
             for x in network_list:
                 network_id = x['name']
-                print(f'        {network_id}')
+                print(f'       - {network_id}')
             print("-" * len(text))
             print('\n\n')
         
