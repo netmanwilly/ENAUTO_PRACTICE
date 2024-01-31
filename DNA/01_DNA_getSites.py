@@ -38,8 +38,7 @@ def getSite(token: str):
     RESPONSE.raise_for_status
     if RESPONSE.status_code != 200:
         return RESPONSE.status_code
-    else:
-        return RESPONSE.json()
+    return RESPONSE.json()
 
 
 if __name__ == '__main__':
