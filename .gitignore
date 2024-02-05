@@ -13,3 +13,7 @@ ANSIBLE/__pycache__/
 ANSIBLE/Scripts/
 ANSIBLE/pyvenv.cfg
 ANSIBLE/Lib/site-packages/
+SDWAN/__pycache__/
+SDWAN/Scripts/
+SDWAN/pyvenv.cfg
+SDWAN/Lib/site-packages/
