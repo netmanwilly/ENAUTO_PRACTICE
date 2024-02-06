@@ -17,3 +17,7 @@ SDWAN/__pycache__/
 SDWAN/Scripts/
 SDWAN/pyvenv.cfg
 SDWAN/Lib/site-packages/
+RESTCONF/__pycache__/
+RESTCONF/Scripts/
+RESTCONF/pyvenv.cfg
+RESTCONF/Lib/site-packages/
