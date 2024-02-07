@@ -5,11 +5,11 @@ import json
 import xmltodict
 
 def getSpecificInterface():
-    BASE_URI = 'https://sbx-nxos-mgmt.cisco.com'
+    BASE_URI = 'https://devnetsandboxiosxe.cisco.com'
     USER = 'admin'
-    PASS = 'Admin_1234!'
+    PASS = 'C1sco12345'
     RESTCONF = 443
-    API = '/restconf/data/Cisco-NX-OS-device:/System/intf-items/phys-items/'
+    API = '/restconf/data/ietf-interfaces:interfaces'
 
     HEADERS = {
         'Content-Type': 'application/yang-data+json',
@@ -20,9 +20,9 @@ def getSpecificInterface():
     RESPONSE.raise_for_status
     if RESPONSE.status_code == 204:
         return f'NOTHING TO SEE HERE: {RESPONSE.status_code}'
-    OUTPUT =  xmltodict.parse(RESPONSE.text, process_namespaces=True)
+    #OUTPUT =  xmltodict.parse(RESPONSE.text, process_namespaces=True)
     print(RESPONSE.status_code)
-    return json.dumps(OUTPUT, indent=2)
+    return RESPONSE.text
 
 
 
