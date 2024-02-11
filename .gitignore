@@ -21,3 +21,7 @@ RESTCONF/__pycache__/
 RESTCONF/Scripts/
 RESTCONF/pyvenv.cfg
 RESTCONF/Lib/site-packages/
+NETCONF/__pycache__/
+NETCONF/Scripts/
+NETCONF/pyvenv.cfg
+NETCONF/Lib/site-packages/

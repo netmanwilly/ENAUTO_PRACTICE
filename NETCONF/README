@@ -1,1 +1,14 @@
 NETCONF PRACTICE
+GOALS
+- get config 
+- get specific interface config
+- Create Loopback interface
+- delete loopback interface
+- edit loopback interface
+
+
+NOTES:
+    - if you want to complete a NC operation to remove configuration, you need to specify a NC name space so that it knows
+      ex: "@xmlns:nc": "urn:ietf:params:xml:ns:netconf:base:1.0",
+    - to make any changes to the configuration you need to have the config tag in the payload sent to the device
+      ex: <config></config>
