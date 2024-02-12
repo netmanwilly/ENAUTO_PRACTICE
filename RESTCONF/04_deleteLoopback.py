@@ -3,7 +3,7 @@ import json
 
 requests.packages.urllib3.disable_warnings()
 
-def createLoopback():
+def deleteLoopback():
     BASE_URI = 'https://devnetsandboxiosxe.cisco.com'
     USER = 'admin'
     PASS = 'C1sco12345'
@@ -17,7 +17,7 @@ def createLoopback():
     PAYLOAD = {
         "Cisco-IOS-XE-native:Loopback": {
             "name": 153,
-            "description": "RESTCONF TEST CREATED BY NETMAN WILLY",
+            "description": "RESTCONF TEST CREATED BY NETMAN WILLY EDITED",
             "ip": {
                 "address": {
                     "primary": {
@@ -31,7 +31,7 @@ def createLoopback():
 
     JSONPAYLOAD = json.dumps(PAYLOAD)
         
-    RESPONSE = requests.put(BASE_URI + API, auth=(USER, PASS), headers=HEADERS, data=JSONPAYLOAD, verify=False)
+    RESPONSE = requests.delete(BASE_URI + API, auth=(USER, PASS), headers=HEADERS, data=JSONPAYLOAD, verify=False)
     
     try:
         RESPONSE.raise_for_status()
@@ -39,11 +39,10 @@ def createLoopback():
         return f"ERROR: {err}"
 
     if RESPONSE.status_code == 204:
-        return 'Loopback interface did exist and was edited successfully.'
-    elif RESPONSE.status_code == 201:
-        return 'Loopback interface did not exist and was created successfully.'
+        return 'Loopback interface removed successfully.'
+        
     else:
         return f'Unexpected response: {RESPONSE.status_code}'
 
 if __name__ == '__main__':
-    print(createLoopback())
+    print(deleteLoopback())

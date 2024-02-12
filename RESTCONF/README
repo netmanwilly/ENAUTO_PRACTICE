@@ -2,4 +2,11 @@ RESTCONF PRACTICE
 3.3 Configure device using RESTCONF API utilizing Python requests library
 
 Jan 15 2023
-    - having a hard time understanding how I can find the URI to access specific resources and having a hard time parsing from the response. Going to move onto DNA/Meraki/SD-WAN to get a better feel for REST API calls 
+    - having a hard time understanding how I can find the URI to access specific resources and having a hard time parsing from the response. 
+      Going to move onto DNA/Meraki/SD-WAN to get a better feel for REST API calls 
+
+Feb 11, 2024
+    - had a hard time figuring out the proper way to format my payload
+    - initially i thought I had to send it as a dict but then i tried as a list
+    - it ended up having to be a regular dict I think what I did wrong was that I sent it as a python dictionary instead of a json payload
+    - also I should have sent it as a PUT request instead of POST since I am just editting a list element called "interface" and not creating a new list
