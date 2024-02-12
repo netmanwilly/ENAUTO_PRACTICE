@@ -25,3 +25,7 @@ NETCONF/__pycache__/
 NETCONF/Scripts/
 NETCONF/pyvenv.cfg
 NETCONF/Lib/site-packages/
+Netmiko/__pycache__/
+Netmiko/Scripts/
+Netmiko/pyvenv.cfg
+Netmiko/Lib/site-packages/
